@@ -96,3 +96,16 @@ p {
     justify-content: center;
     width: 100%;
 }
+
+.rate {
+    font-size: 2vh;
+    margin: 1vw;
+    color: white;
+    background-color: rgba(43, 159, 0, 0.4);
+    padding: 6px;
+    border-radius: 1vh;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
