@@ -1,0 +1,41 @@
+.btm {
+    font-size: 10px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.333);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(255, 248, 255);
+    text-align: center;
+    font-family: scribble-light, Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+body {
+    background-color: rgb(130, 201, 64);
+    
+}
+
+p {
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+
+.desc-title {
+    text-align: start;
+}
+
+.description {
+    width: 40vw;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.hidden {
+    color: rgba( 0, 0, 0, 0);
+    user-select: none;
+}
