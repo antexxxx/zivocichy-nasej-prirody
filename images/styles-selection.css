@@ -1,0 +1,95 @@
+.btm {
+    font-size: 10px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.333);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(255, 248, 255);
+    text-align: center;
+    font-family: scribble-light, Bahnschrift, -apple-system, Helvetica, Arial;
+    font-size: 3vw;
+}
+
+body {
+    background-color: rgb(130, 201, 64);
+    
+}
+
+p {
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    
+}
+
+.h1 {
+    color: rgb(255, 248, 255);
+    font-family: scribble, Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.back {
+    width: 3vw;
+    position: absolute;
+    left: 1vw;
+    top: 2vw;
+}
+
+.content {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+}
+
+.content-row1, .content-row2 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: stretch;
+    gap: 3vh;
+    display: flex;
+    padding-bottom: 3vh
+}
+
+.image {
+    width: 20vw;
+}
+
+.les {
+    border-radius: 1vw;
+    border-width: 0.5vw;
+    border-color: rgb(66, 250, 49);
+    border-style: solid;
+}
+
+.voda {
+    border-radius: 1vw;
+    border-width: 0.5vw;
+    border-color: rgb(0, 177, 234);
+    border-style: solid;
+}
+
+.pole {
+    border-radius: 1vw;
+    border-width: 0.5vw;
+    border-color: rgb(255, 177, 0);
+    border-style: solid;
+}
+
+.mesto {
+    border-radius: 1vw;
+    border-width: 0.5vw;
+    border-color: rgb(170, 170, 170);
+    border-style: solid;
+}

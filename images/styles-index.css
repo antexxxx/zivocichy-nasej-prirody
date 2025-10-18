@@ -1,0 +1,111 @@
+.btm {
+    font-size: 10px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.333);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(255, 248, 255);
+    text-align: center;
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+body {
+    background-color: rgb(130, 201, 64);
+    
+}
+
+p {
+    text-align: center;
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.index {
+    display: inline-flex;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+}
+
+.indeximage {
+    height: 100%;
+    width: 90svh;
+}
+
+.indextext {
+    font-size: 10vh;
+    font-family: scribble-light;
+}
+
+.button-start {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgb(153, 211, 104);
+    gap: 20px;
+    padding: 5px;
+    border-radius: 1vw;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-text {
+    font-size: 7vh;
+    margin: 1vw;
+    color: darkgreen;
+}
+
+.play {
+    width: auto;
+    height: 7vh;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons-extra {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+    flex: 1;
+}
+
+.about-text {
+    font-size: 4vh;
+    margin: 1vw;
+    color: white;
+    background-color: rgb(43, 159, 0);
+    padding: 6px;
+    border-radius: 1vh;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rate {
+    font-size: 2vh;
+    margin: 1vw;
+    color: white;
+    background-color: rgba(43, 159, 0, 0.4);
+    padding: 6px;
+    border-radius: 1vh;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

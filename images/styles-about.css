@@ -1,0 +1,82 @@
+.btm {
+    font-size: 10px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.333);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: rgb(255, 248, 255);
+    text-align: center;
+    font-family: scribble-light, Bahnschrift, -apple-system, Helvetica, Arial;
+    font-size: 3vw;
+}
+
+body {
+    background-color: rgb(130, 201, 64);
+    
+}
+
+p {
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    
+}
+
+.h1 {
+    color: rgb(255, 248, 255);
+    font-family: scribble, Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.back {
+    width: 3vw;
+    position: absolute;
+    left: 1vw;
+    top: 2vw;
+}
+
+.content {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: stretch;
+    gap: 5vh;
+    display: flex;
+
+}
+
+.description {
+    width: 40vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    background-color: rgb(153, 211, 104);
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 1vw;
+}
+
+.hidden {
+    color: rgba( 0, 0, 0, 0);
+    user-select: none;
+}
+
+.authors {
+    width: 40vw;
+    font-size: 1.5vw;
+    text-align: left;
+    background-color: rgb(153, 211, 104);
+    padding: 20px;
+    border-radius: 1vw;
+
+}
