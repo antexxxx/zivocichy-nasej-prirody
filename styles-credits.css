@@ -30,8 +30,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vw;
-    
+    font-size: 4vw;
+    position: relative;
+    top: -4vh;
+    line-height: 0px;
+    padding: 3vh;
+    background-color: rgb(96, 196, 42);
+    border-radius: 2vw;
 }
 
 .h1 {
@@ -41,9 +46,13 @@ p {
 
 .back {
     width: 3vw;
-    position: absolute;
-    left: 1vw;
-    top: 2vw;
+    left: 8px;
+    top: 0vw;
+    position: fixed;
+    background-color: rgb(96, 196, 42);
+    padding: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
 }
 
 .content {
