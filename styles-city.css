@@ -1,0 +1,94 @@
+.btm {
+    font-size: 10px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 0.333);
+    text-align: center;
+}
+
+.a-special {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 1.5vw;
+    line-height: 0px;
+    background-color: rgb(40, 65, 71);
+    border-radius: 1vw;
+}
+
+h1 {
+    color: rgb(255, 248, 255);
+    text-align: center;
+    font-family: scribble-light, Bahnschrift, -apple-system, Helvetica, Arial;
+    font-size: 3vw;
+}
+
+body {
+    background-color: rgb(63, 102, 112);
+    margin-top: 0px;
+}
+
+p {
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+    color: white;
+}
+
+.top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    position: relative;
+    top: -4vh;
+    line-height: 0px;
+    padding: 3vh;
+    background-color: rgb(54, 87, 95);
+    border-radius: 2vw;
+}
+
+
+.h1 {
+    color: rgb(255, 248, 255);
+    font-family: scribble, Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+.back {
+    width: 3vw;
+    left: 8px;
+    top: 0vw;
+    position: fixed;
+    background-color: rgb(54, 87, 95);
+    padding: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+}
+
+.content {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+}
+
+.content-row {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4vw;
+    display: flex;
+    padding-bottom: 3vh;
+
+
+}
+
+.image {
+    width: 13vw;
+    height: 13vw;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.smaller {
+    font-size: 1.25vw;
+}
