@@ -1,0 +1,79 @@
+p {
+    font-family: Bahnschrift, -apple-system, Helvetica, Arial;
+}
+
+body {
+    background-color: #82c940;
+}
+
+.page {
+    display:flex ;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vw;
+}
+
+.title {
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+}
+
+.actions {
+    width: 100%;
+    text-align: center;
+}
+
+.outer-button {
+    padding-top: 1vw;
+    padding-bottom: 0px;
+    height: 100%;
+}
+
+.button-start, .rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    background-color: #99d368;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 3vw;
+    padding-top: 0px;    
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.play {
+    width: 5%;
+    height: auto;
+}
+
+.buttons-extra {
+    width: 100%;
+    height: 100%;
+    gap: 1vw;
+    display: inline-flex;
+}
+
+.button-about, .credits-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 1vw;
+    background-color: #2b9f00;
+    border-radius: 1vw;
+    padding: 0.8vw;
+    padding-top: 0vw;
+    padding-bottom: 0vw;
+
+}
+
+.ext-img {
+    width: 5%;
+    height: auto;
+}
+

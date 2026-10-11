@@ -27,9 +27,9 @@ p {
 .index {
     display: inline-flex;
     padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    gap: 10%;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    gap: 15vw;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -51,8 +51,7 @@ p {
     display: inline-flex;
     align-items: center;
     background-color: rgb(153, 211, 104);
-    gap: 20px;
-    padding: 5px;
+    padding: 0.3vw;
     border-radius: 1vw;
     width: 100%;
     align-items: center;
@@ -80,8 +79,7 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 2vw;
-    flex: 1;
+    gap: 1.5vw;
 }
 
 .about-text {
@@ -98,14 +96,25 @@ p {
 }
 
 .rate {
-    font-size: 2vh;
-    margin: 1vw;
+
+}
+
+.ext-button {
+    width: 5vh;
+    height: 5vh;
+}
+    
+.rating-div {
+    font-size: 3vh;
+
     color: white;
     background-color: rgba(43, 159, 0, 0.4);
-    padding: 6px;
+
     border-radius: 1vh;
     margin-left: 0px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 103%;
+    gap: 1vw;
+    align-items: center;
 }
