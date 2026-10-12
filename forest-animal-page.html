@@ -1,104 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles-forest-animal.css">
     <meta charset="UTF-8">
     <title id="title">loading...</title>
+    <style>
+        @font-face {
+            font-family: "scribble-light";
+            src: url(font/scribble-light.ttf);
+            }
+
+        @font-face {
+            font-family: "scribble";
+            src: url(font/scribble-normal.ttf);
+            }
+    </style>
 </head>
 <body>
-    
+    <div class="top">
+    <a href="forest.html" class="">
+        <img src="images/back.png" class="back">
+    </a>
+    <p class="h1" id="animal-name">loading...</p>
+</div>
 </body>
+    <div>
+        <img src="none" id="img-main">
+    </div>
+
+
+    <div class="video-tab">
+        <p class="h1" id="video-title-text">Videá</p>
+        <a href="none" target="_blank" id="video1">>> video-1</a>
+    </div>
 
 <script>
     let data = window.location.search.slice(1); 
-    let title = document.getElementById('title').innerHTML;
+    let title = "loading..."
+    let img = "none"
+    let vid1 = "about.blank"
+    let vid2 = "about.blank"
+    let vid3 = "about.blank"
     console.log(`input data is ${data}, printing new title...`)
 
     if (data == "1") {
-        let title = "Dažďovka lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
-    }
+        title = "Dažďovka lesná"
+    }   vid1 = "about.blank"
 
     if (data == "2") {
-        let title = "Ďateľ veľký"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Ďateľ veľký"
+        vid1 = "https://drive.google.com/file/d/1JxAupea1bq7l9KSX8CBmVYpvxGFVqSrs/preview"
+        img = "images/datelvelky.jpg"
     }
 
     if (data == "3") {
-        let title = "Diviak lesný"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Diviak lesný"
     }
 
     if (data == "4") {
-        let title = "Kuna lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Kuna lesná"
     }
 
     if (data == "5") {
-        let title = "Mravec lesný"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Mravec lesný"
     }
 
     if (data == "6") {
-        let title = "Myšiak lesný"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Myšiak lesný"
     }
 
     if (data == "7") {
-        let title = "Myšiarka ušatá"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Myšiarka ušatá"
     }
 
     if (data == "8") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Pinka lesná"
     }
 
     if (data == "9") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Raniak hrdzavý"
     }
 
     if (data == "10") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Ryšavka lesná"
     }
 
     if (data == "11") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Slizovec hrdzavý"
     }
 
     if (data == "12") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "srnec lesný"
     }
     if (data == "13") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Sýkorka bielolíca"
     }
     if (data == "14") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Veverica stromová"
     }
     if (data == "15") {
-        let title = "Dažďovka Lesná"
-        document.getElementById('title').innerHTML = title
-        console.log(title)
+        title = "Žižiavka obyčajná"
     }
+
+    document.getElementById('title').innerHTML = title
+    document.getElementById('animal-name').innerHTML = title
+    document.getElementById('video1').href = vid1
+    document.getElementById('video2').href = vid2
+    document.getElementById('video3').href = vid3
+    document.getElementById('img-main').src = img
+//fix hiding js next
+    if (vid1 == "about.blank") {
+    var_name = document.getElementById("video1").style.display = 'none';
+
+    }
+    
+    if (vid2 == "about.blank") {
+    var_name = document.getElementById("video2").style.display = 'none';
+
+    }
+
+    if (vid3 == "about.blank") {
+    var_name = document.getElementById("video3").style.display = 'none';
+
+    }
+    
 
 </script>
 
