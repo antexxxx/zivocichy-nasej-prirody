@@ -31,7 +31,9 @@
 
     <div class="video-tab">
         <p class="h1" id="video-title-text">Videá</p>
-        <a href="none" target="_blank" id="video1">>> video-1</a>
+        <a href="none" target="_blank" id="video1"> >> video-1</a>
+        <a href="none" target="_blank" id="video2"> >> video-2</a>
+        <a href="none" target="_blank" id="video3"> >> video-3</a>
     </div>
 
 <script>
@@ -55,6 +57,7 @@
 
     if (data == "3") {
         title = "Diviak lesný"
+        img = "images/diviaklesny.jpg"
     }
 
     if (data == "4") {
@@ -110,17 +113,17 @@
     document.getElementById('img-main').src = img
 //fix hiding js next
     if (vid1 == "about.blank") {
-    var_name = document.getElementById("video1").style.display = 'none';
+    var_name = document.getElementById("video1").element.style.display = 'none';
 
     }
     
     if (vid2 == "about.blank") {
-    var_name = document.getElementById("video2").style.display = 'none';
+    var_name = document.getElementById("video2").element.style.display = 'none';
 
     }
 
     if (vid3 == "about.blank") {
-    var_name = document.getElementById("video3").style.display = 'none';
+    var_name = document.getElementById("video3").element.style.display = 'none';
 
     }
     

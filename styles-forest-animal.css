@@ -61,4 +61,5 @@ p {
     justify-content: right;
     background: #47911f;
     font-size: 3vw;
+    display: block;
 }
