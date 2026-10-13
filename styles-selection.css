@@ -59,6 +59,7 @@ p {
     padding-left: 2vw;
     padding-right: 2vw;
     justify-content: center;
+    padding: 0px;
 }
 
 .content-row1, .content-row2 {
