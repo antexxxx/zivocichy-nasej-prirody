@@ -22,8 +22,19 @@
     </a>
     <iframe class="iframe-vid" id="iframe-vid" src="vid-error.html"></iframe>
 
+    <div>
+        <p class="notif" id="dismissable">
+            Ak sa prehrávač opýta na "cookies", znova načítajte stránku.
+        </p>
+    </div>
+
 </body>
 <script>
+    setTimeout(() => {
+        document.getElementById("dismissable").style.display = 'none';
+    },
+    3000)
+
     let data = window.location.search.slice(4); 
     console.log(data)
 
@@ -42,6 +53,7 @@
 
     document.getElementById('back').href = prevLink
     document.getElementById('iframe-vid').src = data
+
 </script>
 
 </html>
