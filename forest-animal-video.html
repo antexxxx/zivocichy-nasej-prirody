@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles-forest-video.css">
+    <meta charset="UTF-8">
+    <title id="title">Video</title>
+    <style>
+        @font-face {
+            font-family: "scribble-light";
+            src: url(font/scribble-light.ttf);
+            }
+
+        @font-face {
+            font-family: "scribble";
+            src: url(font/scribble-normal.ttf);
+            }
+    </style>
+</head>
+<body>
+    <a href="forest-animal-page.html" id="back">
+        <img src="images/back.png" class="back">
+    </a>
+    <iframe class="iframe-vid" id="iframe-vid" src="vid-error.html"></iframe>
+
+</body>
+<script>
+    let data = window.location.search.slice(4); 
+    console.log(data)
+
+    let dataCheck = window.location.search.slice(1, 2);
+    let prevData
+    if (dataCheck == 0) {
+        prevData = window.location.search.slice(2, 3);
+    }
+    if (dataCheck == 1) {
+        prevData = window.location.search.slice(1, 3);
+    }
+    console.log(prevData) 
+
+    let Prevlink = "forest-animal-page.html"
+    let prevLink = Prevlink.concat("?", prevData)
+
+    document.getElementById('back').href = prevLink
+    document.getElementById('iframe-vid').src = data
+</script>
+
+</html>

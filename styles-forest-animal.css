@@ -61,5 +61,73 @@ p {
     justify-content: right;
     background: #47911f;
     font-size: 3vw;
-    display: block;
+    display: grid;
+    height: 100%;
+    width: auto;
+    border-radius: 1vw;
+    margin: 1vw;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 1vw;
+    padding-top: 0px;
+}
+.h1-b {
+    color: rgb(255, 248, 255);
+    font-family: scribble-light, Bahnschrift, -apple-system, Helvetica, Arial;
+    font-size: 3vw;
+    line-height: 0px;
+}
+
+.video-icon {
+    width: 3vw;
+    height: 3vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.6vw;
+}
+
+.video-lnk {
+    display: inline-flex;
+    padding: 0px;
+    font-size: 2vw;
+    line-height: 0.3vw;  
+    text-decoration: none;
+    color: #cafc9b;
+}
+
+.content {
+    display: inline-flex;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 3vw;
+}
+
+.img-container {
+    width: 68vw;
+    height:36vw;
+    margin: 1vw;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.full-img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vw;
+
+}
+
+.properties-button {
+    background-color: #47911f;
+    writing-mode: sideways-lr;
+    padding: 2vw;
+    line-height: 0px;
+    height: 38vh;
+    width: auto;
+    border-radius: 1vw;
+    margin: 1vw;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }

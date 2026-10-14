@@ -18,54 +18,87 @@
 </head>
 <body>
     <div class="top">
-    <a href="forest.html" class="">
-        <img src="images/back.png" class="back">
-    </a>
-    <p class="h1" id="animal-name">loading...</p>
-</div>
+        <a href="forest.html" class="">
+            <img src="images/back.png" class="back">
+        </a>
+        <p class="h1" id="animal-name">loading...</p>
+    </div>
+
+
+    <div class="content">
+            <div class="properties-button">
+                <a href="about.blank">
+                    <p>CHARAKTERISTIKA DRUHU</p>
+                    <img>
+                </a>    
+            </div>
+
+        <div class="img-container">
+            <img src="images/missing.png" id="img-main" class="full-img">
+        </div>
+        
+        
+        <div class="video-tab" id="video-tab">
+            <p class="h1-b" id="video-title-text">
+                Videá
+            </p>
+            <a href="about.blank" id="video1" class="video-lnk">
+                <img src="images/video-play.png" class="video-icon">
+                <p>VIDEO 1</p>
+            </a>
+            <a href="about.blank" id="video2" class="video-lnk">
+                <img src="images/video-play.png" class="video-icon">
+                <p>VIDEO 2</p>
+            </a>
+            <a href="about.blank" id="video3" class="video-lnk">
+                <img src="images/video-play.png" class="video-icon">
+                <p>VIDEO 3</p>
+            </a>
+        </div>
+    </div>
+
+<source src=>
+
 </body>
-    <div>
-        <img src="none" id="img-main">
-    </div>
-
-
-    <div class="video-tab">
-        <p class="h1" id="video-title-text">Videá</p>
-        <a href="none" target="_blank" id="video1"> >> video-1</a>
-        <a href="none" target="_blank" id="video2"> >> video-2</a>
-        <a href="none" target="_blank" id="video3"> >> video-3</a>
-    </div>
-
 <script>
     let data = window.location.search.slice(1); 
     let title = "loading..."
-    let img = "none"
+    let img = "images/missing.png"
     let vid1 = "about.blank"
     let vid2 = "about.blank"
     let vid3 = "about.blank"
     console.log(`input data is ${data}, printing new title...`)
 
     if (data == "1") {
-        title = "Dažďovka lesná"
-    }   vid1 = "about.blank"
+        title = "Dážďovka lesná"
+        vid1 = "https://drive.google.com/file/d/1lJ-lVnYxogIoGayOB_8iTvkEJITprqmg/preview"
+        vid2 = "https://drive.google.com/file/d/1Rpx19aCMqF5CJp6o5MF9icLpwaSrwyJG/preview"
+        img = "images/dazdovkazemna.jpg"
+    }
 
     if (data == "2") {
         title = "Ďateľ veľký"
         vid1 = "https://drive.google.com/file/d/1JxAupea1bq7l9KSX8CBmVYpvxGFVqSrs/preview"
+        vid2 = "https://drive.google.com/file/d/1v6jXkqlmsAC51Em3QuhzWP7NGW7Gnhj8/preview"
+        vid3 = "about.blank"
         img = "images/datelvelky.jpg"
     }
 
     if (data == "3") {
         title = "Diviak lesný"
+        vid1 = "https://drive.google.com/file/d/1O08xhjyxclLFBEIeCzHY-D0PfHPvGNSi/preview"
+        vid2 = "https://drive.google.com/file/d/1eeTnbcNXktSb-FZoPnewqOUkRlE3ieBe/preview"
         img = "images/diviaklesny.jpg"
     }
 
     if (data == "4") {
         title = "Kuna lesná"
+        img = "images/kunalesna.jpg"
     }
 
     if (data == "5") {
         title = "Mravec lesný"
+        img = ""
     }
 
     if (data == "6") {
@@ -107,27 +140,38 @@
 
     document.getElementById('title').innerHTML = title
     document.getElementById('animal-name').innerHTML = title
-    document.getElementById('video1').href = vid1
-    document.getElementById('video2').href = vid2
-    document.getElementById('video3').href = vid3
+
+    let empty = ""
+    if (data.length == 1) {
+        data = empty.concat("0", data)
+    }
+    let newlink1 = empty.concat("forest-animal-video.html", "?", data, "?", vid1)
+    let newlink2 = empty.concat("forest-animal-video.html", "?", data, "?", vid2)
+    let newlink3 = empty.concat("forest-animal-video.html", "?", data, "?", vid3)
+
+    document.getElementById('video1').href = newlink1
+    document.getElementById('video2').href = newlink2
+    document.getElementById('video3').href = newlink3
     document.getElementById('img-main').src = img
-//fix hiding js next
+
     if (vid1 == "about.blank") {
-    var_name = document.getElementById("video1").element.style.display = 'none';
+        document.getElementById("video1").style.display = 'none';
 
     }
     
     if (vid2 == "about.blank") {
-    var_name = document.getElementById("video2").element.style.display = 'none';
+        document.getElementById("video2").style.display = 'none';
 
     }
 
     if (vid3 == "about.blank") {
-    var_name = document.getElementById("video3").element.style.display = 'none';
+        document.getElementById("video3").style.display = 'none';
 
     }
-    
 
+    if (vid1 == "about.blank" && vid2 == "about.blank" && vid3 == "about.blank") {
+        document.getElementById('video-title-text').innerText = "Bez videí";
+    }
 </script>
 
 </html>
