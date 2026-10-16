@@ -19,6 +19,8 @@ h1 {
 body {
     background-color: rgb(130, 201, 64);
     margin-top: 0px;
+    max-height: 100%;
+    margin: 0px
 }
 
 p {
@@ -34,7 +36,7 @@ p {
     position: relative;
     top: -4vh;
     line-height: 0px;
-    padding: 3vh;
+    padding: 2vh;
     background-color: rgb(96, 196, 42);
     border-radius: 2vw;
 }
@@ -105,10 +107,11 @@ p {
 
 .img-container {
     width: 68vw;
-    height:36vw;
+    height: 35.5vw;
     margin: 1vw;
     margin-bottom: 0px;
     margin-right: 0px;
+    padding-bottom: 0px;
 }
 
 .full-img { 
@@ -116,18 +119,30 @@ p {
     height: 100%;
     object-fit: cover;
     border-radius: 1vw;
-
+    padding-bottom: 0px;
 }
 
 .properties-button {
     background-color: #47911f;
-    writing-mode: sideways-lr;
-    padding: 2vw;
+    padding: 0px;
+    padding-right: 3vw;
+    padding-left: 3vw;
     line-height: 0px;
-    height: 38vh;
+    height: 35.5vw;
     width: auto;
     border-radius: 1vw;
     margin: 1vw;
     margin-right: 0px;
     margin-bottom: 0px;
+    color: rgb(202, 252, 155);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.8vw;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    writing-mode: sideways-lr;
+}
+
+a {
+    text-decoration: none;
 }
